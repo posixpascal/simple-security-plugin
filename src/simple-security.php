@@ -145,7 +145,8 @@ function disable_head_data(): void
 /** @noinspection PhpUnused */
 function disable_pingbacks(): void
 {
-    add_filter('wp_xmlrpc_server_class', fn() => false) && add_filter('xmlrpc_enabled', fn() => false);
+    add_filter('wp_xmlrpc_server_class', fn() => false);
+    add_filter('xmlrpc_enabled', fn() => false);
     add_filter('pings_open', fn() => false);
     add_filter('wp_headers', fn($headers) => _unset($headers['X-Pingback']));
 }
