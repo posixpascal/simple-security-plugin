@@ -2,7 +2,9 @@
 
 <img src=".github/images/logo.webp" width="256">
 
-# Simple Security Plugin (SSP)
+<p align="center"><small align="center">"Dall-E, generate a logo for this README"</small></p>
+
+<h1 align="center">Simple Security Plugin (SSP)</h1>
 
 
 **Simple Security Plugin (SSP)** is a lightweight and easy-to-use WordPress plugin that helps you secure your WordPress installation by disabling or customizing various features that may expose your site to vulnerabilities. The plugin gives you fine-grained control over REST API endpoints, head data, automatic updates, and more.
@@ -37,6 +39,9 @@
 ## Usage
 
 Once the plugin is activated, you can configure the security options from the **Simple Security Plugin** settings page.
+
+![settings_screen.png](.github/images/settings_screen.png)
+*Screenshot of https://your-website.tld/wp-admin/options-general.php?page=simple-security-settings-page*
 
 ### Available Settings:
 
