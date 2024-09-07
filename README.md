@@ -1,4 +1,4 @@
-<center>
+<p align="center">
 
 <img src=".github/images/logo.webp" width="256">
 
@@ -8,7 +8,7 @@
 **Simple Security Plugin (SSP)** is a lightweight and easy-to-use WordPress plugin that helps you secure your WordPress installation by disabling or customizing various features that may expose your site to vulnerabilities. The plugin gives you fine-grained control over REST API endpoints, head data, automatic updates, and more.
 
 
-</center>
+</p>
 
 ## Features
 
