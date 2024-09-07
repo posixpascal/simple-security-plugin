@@ -2,7 +2,7 @@
 
 <img src=".github/images/logo.webp" width="256">
 
-<p align="center"><small align="center">"Dall-E, generate a logo for this README"</small></p>
+<p align="center"><i>"Dall-E, generate a logo for this README."</i></p>
 
 <h1 align="center">Simple Security Plugin (SSP)</h1>
 
