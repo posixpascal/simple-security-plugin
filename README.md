@@ -1,4 +1,5 @@
 <center>
+
 <img src=".github/images/logo.webp" width="256">
 
 # Simple Security Plugin (SSP)
