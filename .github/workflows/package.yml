@@ -27,7 +27,7 @@ jobs:
           set -eaux
           sed -i "s/\$VERSION/${{ steps.release.outputs.tag }}/" src/simple-security.php 
           mkdir -p /tmp/simple-security-plugin/
-          cp -R src /tmp/simple-security-plugin/
+          cp -R src/* /tmp/simple-security-plugin/
           (cd /tmp && zip -r /tmp/simple-security-plugin.zip simple-security-plugin/)
 
       - name: Release

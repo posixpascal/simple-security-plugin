@@ -12,6 +12,10 @@
  * License:           MIT
  */
 
+if (!defined('ABSPATH')){
+    exit;
+}
+
 /**
  * Security Settings
  */
