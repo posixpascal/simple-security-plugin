@@ -1,0 +1,19 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.5.4",
+    "jsdom": "^25.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

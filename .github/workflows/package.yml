@@ -1,0 +1,44 @@
+name: Package Simple Security Plugin
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  web:
+    name: "SimpleSecurityPlugin Plugin"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout 🛎"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set Release Name
+        id: release
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+
+      - name: Setup PHP 
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+      
+      - name: "Composer"
+        run: composer install
+        
+      - name: "Update version"
+        run: |
+          sed -i "s/\$VERSION/${{ steps.release.outputs.tag }}/" src/simple-security.php 
+
+      - name: "ZIP & Publish"
+        run: |
+          bash scripts/publish.sh  
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: /tmp/simple-security-plugin.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GHCR_TOKEN }}
